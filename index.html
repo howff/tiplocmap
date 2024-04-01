@@ -66,12 +66,17 @@
     // For each row, columns `Latitude`, `Longitude`, and `Title` are required
     for (var i in data) {
       var row = data[i];
-
+      try
+      {
       var marker = L.marker( L.latLng(parseFloat(row.latitude), parseFloat(row.longitude)), {
         opacity: 1
       }).bindPopup(row.title);
-      
       marker.addTo(map);
+      }
+      catch(err)
+      {
+        // no marker if coord cannot be parsed
+      }
     }
 
   });
