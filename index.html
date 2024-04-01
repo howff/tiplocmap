@@ -33,6 +33,7 @@
     center: [55, -2], // EDIT latitude, longitude to re-center map
     zoom: 9,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false,
+    preferCanvas: true,
     tap: false
   });
 
@@ -68,7 +69,7 @@
       var row = data[i];
       try
       {
-      var marker = L.marker( L.latLng(parseFloat(row.latitude), parseFloat(row.longitude)), {
+      var marker = L.circleMarker( L.latLng(parseFloat(row.latitude), parseFloat(row.longitude)), {
         opacity: 1
       }).bindPopup(row.title);
       marker.addTo(map);
