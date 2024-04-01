@@ -1,28 +1,21 @@
-# leaflet-map-csv
-Build a simple Leaflet map with point markers from a CSV file.
+# Demo map showing TIPLOC locations
 
-![Screenshot](leaflet-map-csv.png)
+Demo map showing TIPLOC locations is at https://howff.github.io/tiplocmap/
 
-## Demo
-https://handsondataviz.github.io/leaflet-map-csv/
+The repo needs a branch called `gh-pages` and then it gets deployed via https://github.com/howff/tiplocmap/deployments/github-pages
 
-Sample data of select universities and colleges around CT by HandsOnDataViz.
+I've added an OpenRailwayMap but not sure I integrated it correctly.
+Other map providers are shown here: https://leaflet-extras.github.io/leaflet-providers/preview/
 
-## Make your own
+# Credits
 
-1. Press **Use this template** button to create a copy of this repository in your own GitHub account.
-2. Put your point data data inside `data.csv`. The only relevant columns that will be read by the template
-are `Latitude`, `Longitude`, and `Title` (displayed in a popup). Sample data:
-```
-Title,Latitude,Longitude
-Trinity College,41.745167,-72.69263
-Wesleyan University,41.55709,-72.65691
-```
+TIPLOC data is from https://github.com/oweno-tfwm/YA_Tiploc_List
 
-For more information on customization, see [Leaflet documentation](https://leafletjs.com/).
+OpenRailwayMap is from https://www.openrailwaymap.org/
 
-## HandsOnDataViz Tutorial
-https://handsondataviz.org/leaflet-maps-with-csv.html
+Demo leaflet from CSV came from https://handsondataviz.org/leaflet-maps-with-csv.html and https://github.com/HandsOnDataViz/leaflet-map-csv
+
+Leaflet mapping is from [Leaflet documentation](https://leafletjs.com/).
 
 ## See other Leaflet templates
 * [Simple Leaflet map](https://github.com/HandsOnDataViz/leaflet-map-simple)
